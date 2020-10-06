@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t zahaanjasani/react-test -f ./client/Dockerfile.dev ./client
+    - docker build -t zahaanjasani/complex-react-test -f ./client/Dockerfile.dev ./client
 
 scripts:
     - docker run -e CI=true zahaanjasani/complex-react-test npm test
